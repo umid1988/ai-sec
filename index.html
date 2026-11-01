@@ -28,6 +28,51 @@
 .audit-matrix{font-size:12px}.checklist-extra{padding:10px;border:1px solid var(--stroke);border-radius:10px;background:var(--bg)}.read-order{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:13px}.read-order .panel{margin:0}.clarification{border:1px dashed var(--stroke);padding:12px 14px;border-radius:10px;font-size:13px;color:var(--muted)}
 @media(max-width:800px){.case-fields,.read-order{grid-template-columns:1fr}.research-note{padding:14px}.filter-controls{display:block}.filter-controls input,.filter-controls select{width:100%;margin:4px 0}}
 @media print{.research-note,.case-study,.resource-entry{break-inside:avoid}.filter-controls{display:none}.upgrade-banner{border:1px solid #777}}
+
+/* ===== Palette: "qog'oz va siyoh" — calm, print-like colours =====
+   Warm paper background, slate ink text, one restrained blue accent.
+   No glows, gradients or neon. Overrides the hard-coded colours above. */
+:root{--bg:#f4f2ed;--paper:#fcfbf8;--ink:#22272b;--muted:#5f6468;--blue:#2b5d7d;--bluep:#e6edf1;--green:#2e6a4f;--greenp:#e7f0ea;--orange:#85571a;--orangep:#f5ecdd;--red:#9e3b33;--redp:#f6e7e4;--stroke:#e2ded5;--code:#24282b;--code-ink:#e8e6e1;--wash:#f7f5f0;--wash2:#efece5;--shadow:0 1px 2px rgba(40,34,24,.05);--radius:10px;--btn:#2b5d7d;--btn-ink:#fff;--btn-hover:#234d68;--hero-bg:#263038;--hero-ink:#f3f1ec;--hero-muted:#c9ccce;--hero-accent:#b9cfdc;--hero-line:rgba(255,255,255,.2)}
+@media(prefers-color-scheme:dark){:root{--bg:#191918;--paper:#212120;--ink:#e6e2da;--muted:#a39e95;--blue:#93b9d1;--bluep:#26313a;--green:#93c4a7;--greenp:#22302a;--orange:#d6b27c;--orangep:#352c20;--red:#e09a90;--redp:#3a2624;--stroke:#34332f;--code:#121211;--wash:#1d1d1c;--wash2:#2a2927;--shadow:none;--btn:#93b9d1;--btn-ink:#14191c;--btn-hover:#a9c8dc;--hero-bg:#252a2d}}
+body{background:var(--bg);color:var(--ink)}
+.sidebar{border-radius:12px;background:var(--paper)}
+.sidebar .sheading{color:var(--muted)}
+.num,.badgelevel{background:var(--wash2);color:var(--muted)}
+.hero{background:var(--hero-bg);border-radius:12px;color:var(--hero-ink)}
+.hero:after{display:none}
+.eyebrow{color:var(--hero-accent)}
+.hero p,.artbox small{color:var(--hero-muted)}
+.hero .meta span{border-color:var(--hero-line);background:transparent}
+.artbox{background:rgba(255,255,255,.04);border-color:var(--hero-line)}
+.arrow{color:var(--hero-muted)}
+.badge{background:var(--bluep);color:var(--blue)}
+.callout,.panel,.diagram,.toc-entry,.research-note .exercise,.case-field,.checklist-extra{background:var(--wash)}
+.callout.warn{border-left-color:var(--orange)}.callout.good{border-left-color:var(--green)}
+th{background:var(--wash2);color:var(--ink)}
+tr:nth-child(even) td{background:var(--wash)}
+code,kbd{background:var(--wash2)}
+pre{background:var(--code);color:var(--code-ink)}
+pre code{background:transparent}
+.dnode{background:var(--bluep);border-color:var(--stroke)}
+.dnode.green{background:var(--greenp);border-color:var(--stroke)}
+.dnode.yellow{background:var(--orangep);border-color:var(--stroke)}
+.darrow{color:var(--muted)}
+.panel.bad{background:var(--redp)}.panel.good{background:var(--greenp)}
+.toc-entry:hover{border-color:var(--blue);background:var(--paper)}
+.progress{background:var(--wash2)}
+.bar{background:var(--blue)}
+.option:has(input:checked){background:var(--bluep);border-color:var(--blue)}
+.feedback{background:var(--wash2)}
+.feedback.correct{background:var(--greenp);color:var(--green)}
+.feedback.incorrect{background:var(--redp);color:var(--red)}
+.button{background:var(--btn);color:var(--btn-ink)}
+.button:hover{background:var(--btn-hover)}
+.button.secondary{background:var(--bluep);color:var(--blue)}
+.button:disabled{background:var(--wash2);color:var(--muted)}
+.result{background:var(--bluep)}
+.research-note{border-left-color:var(--blue)}
+.upgrade-banner,.research-note,.section{background:var(--paper)}
+@media print{.hero{background:#263038!important}}
 </style>
 </head>
 <body>
