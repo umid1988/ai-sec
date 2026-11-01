@@ -2,7 +2,7 @@
 
 O‘zbek tilidagi AI Red Teaming va LLM Security bo‘yicha amaliy kurs: asoslardan (prompt injection, trust boundary) RAG, AI agentlar, MCP, authorization va professional red team hisobotigacha.
 
-**Sayt:** https://umid1988.github.io/ai-sec/
+**Sayt:** https://umid1988.github.io/blog/ai-sec/
 
 ## Tarkibi
 
